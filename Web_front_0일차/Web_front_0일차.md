@@ -72,3 +72,12 @@ path가 의미하는 것 : 서버 안에 있는 세부 주소<br><br>
     - 블릿기호가 표시된다
 - List item 태그 : li
     - list의 요소들을 **li** 태그를 이용해 감싼다
+
+<br>
+<br>**vs code에서의 html 단축키**<br>
+- alt + shift : 한 줄 복사
+- ctrl + enter : 뒷내용 무시하고 엔터
+- ! + tab : html 기본 틀 만들기
+- tag.class + tab : 클래스명 바로 부여
+- tag#id + tab : 아이디명 바로 부여
+- alt + l + o : live server 열기
