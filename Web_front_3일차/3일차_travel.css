@@ -1,0 +1,24 @@
+h1 {
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(48, 48, 48);
+    line-height: 30px;
+}
+
+th {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3030b0; /* == rgb(51, 51, 176)*/
+}
+
+a, a:visited { /*href 들어갔다 나와도*/
+    color: rgb(80, 150, 176);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+img {
+    
+    height: 200px;
+}
