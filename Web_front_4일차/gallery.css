@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cell {
+    display: inline-block;
+    width: 100%;
+    margin: 0 1%;
+}
+
+.cell img {
+    width: 30%;
+}
+
+.row {
+    margin: 20px 0;
+    text-align: center;
+}
+
+header {
+    margin: 10px 5%;
+    padding: 20px 0;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+header h1 {
+    font-size: 21px;
+    display: inline;
+}
+
+header span {
+    font-size: 14px;
+    font-weight: 800;
+    background-color: yellow;
+}
