@@ -7,8 +7,10 @@ Web_front_1일차 (2023.07.02) <br>
 Web_front_2일차 (2023.07.04) <br>
 Web_front_3일차 (2023.07.05) <br>
 Web_front_4일차 (2023.07.06) <br>
+Web_front_5일차 (2023.07.07) <br>
 
 <br>
 
 ### BaekJoon_Python
 Python_1일차 (2023.07.06) <br>
+Python_2일차 (2023.07.07) <br>
