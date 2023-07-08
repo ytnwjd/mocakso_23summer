@@ -1,0 +1,25 @@
+<script>
+    // 수열 n = 수열 n-2번째 + 수열
+    var n_2 = 1;
+    var n_1 = 1;
+
+    console.log(n_2);
+    console.log(n_1);
+
+    console.log("for문 사용");
+    for(var i = 0; i < 100; i++) {
+        var n = n_2 + n_1;
+        console.log(n);
+        n_2 = n_1;
+        n_1 = n;
+    }
+
+    console.log("while문 사용");
+    var i = 0;
+    while(i < 100) {
+        var n = n_2 + n_1;
+        console.log(n);
+        n_2 = n_1;
+        n_1 = n;
+    }
+</script>

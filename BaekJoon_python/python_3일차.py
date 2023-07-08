@@ -26,12 +26,3 @@
 #     print("Case {}: {}".format(i+1, a+b))
 
 # <9085>
-cnt = int(input())
-sum = 0
-for i in range(cnt):
-    num = int(input())
-    for n in range(num):
-        num_list = list(map(int, input().split()))
-    for j in num_list:
-        sum += j
-print(sum)
