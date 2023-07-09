@@ -2,27 +2,39 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="회원가입, html">
         <title>회원가입 폼</title>
+        <script type="text/javascript" src="./validation.js"></script>
+        <style>
+            .alert-message {
+                margin: 0 10px;
+                color: #f09090;
+                font-size: 14px;
+                font-weight: 900;
+            }
+        </style>
     </head>
 
     <body>
         <h1>회원가입</h1>
         <hr>
-        <form action="" method="post">
+        <form action="file:///D:/AJOU%20Univ/2023%20%ED%95%98%EA%B3%84%20%EB%AA%A8%EA%B0%81%EC%86%8C/mogagso_23summer/Web_front/Web_front_7%EC%9D%BC%EC%B0%A8/7%EC%9D%BC%EC%B0%A8_%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85validation.html" method="post">
             <fieldset>
                 <legend>계정 정보</legend>
                 <div>
                     <label for="id-account">아이디</label>
                     <input type="text" name="account" id="id-account" required="required">  <!--required 속성을 넣으면 필수 입력칸이 된다-->
+                    <span class="alert-message" id="account-alert">test</span>
                 </div>
                 <div>
                     <label for="id-password">비밀번호</label>
                     <input type="password" name="password" id="id-password" required="required">
+                    <span class="alert-message">test</span>
                 </div>
                 <div>
                     <label for="id-password2">비밀번호 확인</label>
                     <input type="password" name="password2" id="id-password2" required="required">
+                    <span class="alert-message">test</span>
                 </div>
             </fieldset>
             
@@ -31,35 +43,29 @@
                 <div>
                     <label for="id-name">이름</label>
                     <input type="text" name="name" id="id-name" required="required">
+                    <span class="alert-message">test</span>
                 </div>
                 <div>
                     <label>생년월일</label>
                     <input type="number" name="birth-year" placeholder="년" min="1900" max="2020" required="required">  <!--min과 max는 number type에서 제공되는 속성-->
                     <select name="birth-month">
-                        <option>월</option>
-                        <option value="1">1월</option>
-                        <option value="2">2월</option>
-                        <option value="3">3월</option>
-                        <option value="4">4월</option>
-                        <option value="5">5월</option>
-                        <option value="6">6월</option>
-                        <option value="7">7월</option>
-                        <option value="8">8월</option>
-                        <option value="9">9월</option>
-                        <option value="10">10월</option>
-                        <option value="11">11월</option>
-                        <option value="12">12월</option>
+                        <option value="">월</option>
                     </select>
                     <input type="number" name="birth-day" placeholder="일" min="1" max="31" required="required">
+                    <span class="alert-message">test</span>
                 </div>
                 <div>
                     <label>성별</label>
-                    <input type="radio" name="gender" id="id-gender-male" required="required">  <!--for를 쓰게 되면 선택 영역이 넓어진다!-->
+                    <input type="radio" name="gender" id="id-gender-male" required="required" value="male">  <!--for를 쓰게 되면 선택 영역이 넓어진다!-->
                     <label for="id-gender-male">남</label>                  <!--동그라미를 누르지 않고 "남"을 눌러도, 체크가 된다!-->
-                    <input type="radio" name="gender" id="id-gender-female" required="required">
+                    
+                    <input type="radio" name="gender" id="id-gender-female" required="required" value="female">
                     <label for="id-gender-female">여</label>
-                    <input type="radio" name="gender" id="id-gender-unknown" required="required">
+                    
+                    <input type="radio" name="gender" id="id-gender-unknown" required="required" value="unknown">
                     <label for="id-gender-unknown">기타</label>
+
+                    <span class="alert-message">test</span>
                 </div>
             </fieldset>
 
@@ -71,7 +77,7 @@
             <input type="submit" value="가입하기">  <!--form action에 아무것도 없어서, 자기 자신의 페이지로 돌아오게 됨. 원래 submit 버튼을 누르면 그 홈페이지 사이트로 이동!-->
             
             <!--submit 대체 버튼으로 button 태그도 사용이 가능하다. button 태그가 css 입히기 더 용이함!-->
-            <button type="submit">가입하기</button>
+            <!-- <button type="submit">가입하기</button> -->
         </form>
     </body>
 </html>
