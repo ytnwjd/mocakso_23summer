@@ -1,6 +1,13 @@
 # mogagso_23summer
 2023년도 하계 모각소 활동을 위한 repository
 
+<br>
+
+### 하계 실전코딩
+[실전코딩 git lab](https://git.ajou.ac.kr/y.tnwjd){:target="_blank"}
+
+<br>
+
 ### Webfront
 Web_front_0일차 (2023.07.01) <br>
 Web_front_1일차 (2023.07.02) <br>
