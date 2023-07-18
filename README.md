@@ -4,7 +4,7 @@
 <br>
 
 ### 하계 실전코딩
-[실전코딩 git lab](https://git.ajou.ac.kr/y.tnwjd){:target="_blank"}
+[실전코딩 git lab](https://git.ajou.ac.kr/y.tnwjd)
 
 <br>
 
