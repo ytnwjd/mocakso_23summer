@@ -15,45 +15,43 @@ bool isFull();
 
 
 
-void main()
+int main()
 {
     int select;
     int data;
-    
+
     while (true)
     {
         printf("원하는 연산을 고르세요.\n");
         printf("1.Push      2.Pop       3.Stack 확인       4.Exit\n");
 
-        scanf(">>>%d", &select);
+        scanf_s("%d", &select);
 
-        if(select == 1) {   // push
+        if (select == 1) {   // push
             printf("push할 정수형 데이터를 입력해주세요.\n>>> ");
-            scanf("%d", &data);
+            scanf_s("%d", &data);
             push(data);
-            break;
         }
-        else if(select == 2) {  // pop
+        else if (select == 2) {  // pop
             pop();
-            break;
-        }   
-        else if(select == 3) {  //확인
-            if(isEmpty()) {
+        }
+        else if (select == 3) {  //확인
+            if (isEmpty()) {
                 printf("stack이 비어있습니다.\n");
             }
-            else if(isFull()) {
+            else if (isFull()) {
                 printf("stack이 꽉 찼습니다.\n");
             }
             else printf("Stack에 데이터가 있습니다.\n");
-            break;
+
         }
-        else if(select == 4) {  // exit
+        else if (select == 4) {  // exit
             printf("프로그램을 종료합니다.");
             return;
         }
         else {
             printf("유효하지 않은 선택입니다. 다시 선택해주세요.\n");
-            break;
+
         }
     }
 
@@ -63,7 +61,7 @@ void main()
 
 
 void push(int data) {
-    if (top > MAX_STACK_SIZE){
+    if (top > MAX_STACK_SIZE) {
         printf("Stack이 꽉 찼습니다. 더 이상 push 할 수 없습니다!\n");
     }
     else {
