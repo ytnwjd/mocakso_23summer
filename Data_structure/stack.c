@@ -61,7 +61,7 @@ int main()
 
 
 void push(int data) {
-    if (top > MAX_STACK_SIZE) {
+    if (isFull()) {
         printf("Stack이 꽉 찼습니다. 더 이상 push 할 수 없습니다!\n");
     }
     else {
@@ -71,7 +71,7 @@ void push(int data) {
 }
 
 void pop() {
-    if (top == -1) {
+    if (isEmpty()) {
         printf("Stack이 비어있습니다. pop 할 수 없습니다!\n");
     }
     else {
