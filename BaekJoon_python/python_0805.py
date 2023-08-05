@@ -109,3 +109,31 @@
 # for _ in range(m):
 #     i, j = map(int, sys.stdin.readline().split())
 #     print(p[j]-p[i-1])
+
+# <2577>
+# arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# a = int(input()); b = int(input()); c = int(input())
+# num = a*b*c
+# num = str(num)
+# for i in num:
+#     i = int(i)
+#     arr[i] = arr[i]+1
+# for j in arr:
+#     print(j)
+
+# <4344>
+# c = int(input())
+# for _ in range(c):
+#     arr = list(map(int, input().split()))
+#     ave = 0
+#     cnt = 0
+#     result = 0
+#     num = arr[0]
+#     for j in range(num):
+#         ave += arr[j+1]
+#     ave = (ave/num)
+#     for k in range(num):
+#         if (arr[k+1] > ave):
+#             cnt += 1
+#     result = (cnt/num) *100
+#     print("%.3f" % (result)+ "%")
